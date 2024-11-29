@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
 
-  "homepage": "https://damoonsh.github.io/civil-asin",
+  "homepage": "https://damoonsh.github.io/civil-asin/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
