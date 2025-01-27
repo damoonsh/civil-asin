@@ -121,9 +121,7 @@ const Slideshow = ({ data, cert }) => {
         </div>
       ))}
       <button
-        className={`nav-button next-button ${
-          isModalOpen ? "nav-button-black" : ""
-        }`}
+        className="nav-button next-button"
         onClick={handleNext}
       >
         &#10095;
