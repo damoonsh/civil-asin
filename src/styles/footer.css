@@ -1,0 +1,30 @@
+/* Media query for smaller screens */
+@media (min-width: 1200px) {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    p {
+      font-size: 0.3rem;
+    }
+  }

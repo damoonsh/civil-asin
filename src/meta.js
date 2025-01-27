@@ -1,10 +1,6 @@
 const project_images = [
-    { src: "/civil-asin/project_pics/saveh.jpg", desc: "استادیم ساوه" },
+    { src: "/civil-asin/project_pics/saveh.jpg", desc: "استادیم ساوجبلاغ" },
     { src: "/civil-asin/project_pics/malard_stadium.JPG", desc: "استادیم ملارد" },
-    {
-      src: "/civil-asin/project_pics/skeleton_factory.JPG",
-      desc: "کارخانه اسکلت",
-    },
     {
       src: "/civil-asin/project_pics/talayie.jpg",
       desc: "مجتمع مسكوني ۲۰۰ واحدي طلاييه",

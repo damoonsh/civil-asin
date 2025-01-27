@@ -27,3 +27,43 @@
   text-align: right;
   padding-left: 5px;
 }
+
+.header h1 {
+  margin-right: 20px;
+  font-size: 2rem; /* Default font size */
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+  .header h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header h3 {
+    font-size: 0.5rem;
+  }
+}

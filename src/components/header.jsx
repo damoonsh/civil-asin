@@ -1,5 +1,5 @@
 // src/Header.jsx
-import './styles/Header.css'; // Optional: for styling
+import '../styles/Header.css'; // Optional: for styling
 
 const Header = () => {
   return (
@@ -8,8 +8,8 @@ const Header = () => {
         <h3>به وب‌سایت شرکت ما خوش آمدید</h3>
       </div>
       <div className="left-content">
-        <h1>Civil Asin | سیویل آسین</h1>
-        <img src="/civil-asin/logo.BMP" alt="Company Logo" className="logo" />
+        {/* <h1>Civil Asin | سیویل آسین</h1> */}
+        <img src="/civil-asin/full_logo.png" alt="Company Logo" className="logo" />
       </div>
     </header>
   );

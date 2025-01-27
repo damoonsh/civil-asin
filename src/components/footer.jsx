@@ -1,3 +1,4 @@
+import '../styles/footer.css';
 function Footer() {
     const footerStyle = {
         paddingTop: '20px',
@@ -10,7 +11,7 @@ function Footer() {
       };
 
       const lastParagraphStyle = {
-        paddingBottom: '5px',
+        // paddingBottom: '5px',
       };
     
       return (

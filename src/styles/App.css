@@ -1,5 +1,32 @@
-body {
-  font-family: "Vazir", sans-serif;
-  padding: 0;
+body, html {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'B Nazanin', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #00008B 50%, grey 50%);
+  color: white;
+  box-sizing: border-box;
+  direction: rtl;
 }

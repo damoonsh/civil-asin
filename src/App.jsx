@@ -1,18 +1,21 @@
-import Header from './header'
-import Footer from './footer'
-import Slideshow from './SlideShow';
+import Header from './components/header'
+import Footer from './components/footer'
+import Slideshow from './components/SlideShow';
 
+import './styles/App.css';
 import {project_images,certs} from "./meta";
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Slideshow data={project_images} />
-      <Slideshow data={certs} />
+    <div className="App">
+      <div className="main-content">
+        <Header />
+        <Slideshow data={project_images} />
+        <Slideshow data={certs} cert={true} />
+      </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

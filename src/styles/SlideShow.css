@@ -4,24 +4,30 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
-  padding-top: 6px;
-  /* height: 400px; Adjust height as needed */
+  height: 80%; /* Adjust height as needed */
   position: relative;
 }
 
 .slideshow-item {
-  width: 33.33%; /* Show 3 images at once */
   text-align: center;
   position: relative;
-  padding-right: 5px;
+  padding-top: 0.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
 }
 
 .slideshow-image {
   width: 100%;
-  height: 80%;
+  height: 80%; /* Adjust height as needed */
   object-fit: cover;
   transition: transform 1s ease-in-out;
 }
+
+.cert-image {
+  width: 70%;
+  /* height: 10%; */
+}
+
 .slideshow-desc {
   position: absolute;
   bottom: 10px;
@@ -30,4 +36,28 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 5px;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
