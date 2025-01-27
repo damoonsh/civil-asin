@@ -1,13 +1,29 @@
 /* src/Header.css */
 .header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-  }
-  
-  .logo {
-    height: 50px;
-    margin-right: 20px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+  background: linear-gradient(to right, #00008B 50%, grey 50%);
+  color: white;
+  box-sizing: border-box; 
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.left-content h1 {
+  margin-right: 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.right-content {
+  text-align: right;
+  padding-left: 5px;
+}
