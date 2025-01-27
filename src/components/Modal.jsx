@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import '../styles/Modal.css';
 
 const Modal = ({ isOpen, onClose, imageSrc, onPrev, onNext }) => {
