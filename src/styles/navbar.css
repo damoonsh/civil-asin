@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    gap: 1rem; /* Default space between links */
+}
+  
+  .navbar a {
+    color: white; /* Default text color */
+    text-decoration: none;
+    font-size: 1.3rem; /* Default font size */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #007bff; /* Blue on hover */
+  }
+  
+  /* Media queries for responsive font sizes and spacing */
+  
+  /* For screens smaller than 1200px */
+  @media (max-width: 1800px) {
+    .navbar {
+      gap: 2rem; /* Reduce spacing */
+    }
+    .navbar a {
+      font-size: 1.5rem; /* Smaller font size */
+    }
+  }
+  
+  /* For screens smaller than 1000px */
+  @media (max-width: 1000px) {
+    .navbar {
+      gap: 2rem; /* Reduce spacing */
+    }
+    .navbar a {
+      font-size: 1.1rem; /* Smaller font size */
+    }
+  }
+  
+  /* For screens smaller than 800px */
+  @media (max-width: 800px) {
+    .navbar {
+      gap: 1.7rem; /* Reduce spacing */
+    }
+    .navbar a {
+      font-size: 0.7rem; /* Smaller font size */
+    }
+  }
+  
+  /* For screens smaller than 600px */
+  @media (max-width: 600px) {
+    .navbar {
+      gap: 1.1rem; /* Reduce spacing */
+    }
+    .navbar a {
+      font-size: 0.6rem; /* Smaller font size */
+    }
+  }

@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <div className="main-content">
         <Header />
-        <Slideshow data={project_images} />
-        <Slideshow data={certs} cert={true} />
+        <Slideshow data={project_images} DescOn={true} />
+        <Slideshow data={certs} cert={true} DescOn={false} />
       </div>
       <Footer />
     </div>

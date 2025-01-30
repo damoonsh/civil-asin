@@ -4,7 +4,7 @@ function Footer() {
         paddingTop: '20px',
         paddinBottom: '20px',
         textAlign: 'center',
-        background: 'linear-gradient(to right, #00008B 50%, grey 50%)',
+        background: 'linear-gradient(to right, #00008B 50%, orange 50%)',
         color: 'white',
         boxSizing: 'border-box',
         direction: 'rtl',

@@ -32,7 +32,7 @@ function sizing_logic(w, cert) {
 }
 
 // eslint-disable-next-line react/prop-types
-const Slideshow = ({ data, cert }) => {
+const Slideshow = ({ data, cert, DescOn }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(
     sizing_logic(window.innerWidth, cert)
@@ -117,7 +117,11 @@ const Slideshow = ({ data, cert }) => {
               handleImageClick(image.src, (currentIndex + index) % data.length)
             }
           />
-          <p className="slideshow-desc">{image.desc}</p>
+          {DescOn ? (
+            <p className="slideshow-desc">{image.desc}</p>
+          ) : (
+            <div className="desc-below">{image.desc}</div>
+          )}
         </div>
       ))}
       <button
