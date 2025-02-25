@@ -6,7 +6,7 @@ body, html {
 .board-members-container {
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 2rem; */
+  padding: 0 1.5rem; /* Added horizontal padding */
   direction: rtl; /* For right-to-left layout */
   position: relative;
   z-index: 1; /* Lower z-index than navbar */
@@ -24,8 +24,9 @@ body, html {
 .members-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end; /* Aligns items to the right in RTL */
+  justify-content: space-between; /* Changed from flex-end to space-between */
   gap: 2rem;
+  padding: 0 0.5rem; /* Added some padding */
 }
 
 /* Styling for the Person component */
@@ -84,18 +85,25 @@ body, html {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .members-grid {
-    justify-content: center;
-  }
-  
+@media (max-width: 992px) {
   .person-card {
-    flex: 0 0 100%;
-    max-width: 350px;
+    flex: 0 0 calc(50% - 2rem); /* Two cards per row on medium screens */
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
+  .members-grid {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .person-card {
+    flex: 0 0 calc(100% - 2rem); /* One card per row on small screens */
+    max-width: 21.875rem;
+  }
+}
+
+@media (max-width: 250px) {
   .person-card {
     flex-direction: column;
   }

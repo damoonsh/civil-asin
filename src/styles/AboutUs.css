@@ -1,0 +1,55 @@
+.about-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-us-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.about-us-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-us-column {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.english {
+  background-color: #f0f8ff;
+  text-align: left;
+}
+
+.persian {
+  background-color: #fff8f0;
+  text-align: right;
+  direction: rtl;
+}
+
+.about-us-column h2 {
+  margin-bottom: 1.5rem;
+  color: #00008B;
+}
+
+.about-us-column p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 540px) {
+  .about-us-content {
+    flex-direction: column;
+  }
+  
+  .about-us-column {
+    margin-bottom: 1.5rem;
+  }
+} 
