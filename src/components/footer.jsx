@@ -1,5 +1,5 @@
 import '../styles/footer.css';
-function Footer() {
+const Footer = () => {
     const footerStyle = {
         paddingTop: '20px',
         paddinBottom: '20px',

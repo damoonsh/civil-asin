@@ -1,13 +1,11 @@
-
-import "../styles/navbar.css"; // Ensure styles are applied
-
+import "../styles/navbar.css"; 
+import { HashLink as Link } from 'react-router-hash-link'; 
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <a href="#home">تیم مدیریت</a>
       <a href="#about">تماس با ما</a>
-      <a href="#services">درباره ما</a>
-      <a href="#contact">کارکنان کلیدی</a>
+      <Link to="/board-members">هیات مدیره</Link>
+      <a href="#services">درباره شرکت</a>
     </nav>
   );
 };

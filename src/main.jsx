@@ -1,9 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import App from './App';
+import BoardMembers from './pages/BoardMembers';
+import Header from './components/header';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <HashRouter basename="/">
+      <Header />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/board-members" element={<BoardMembers />} />
+      </Routes>
+    </HashRouter>
+  </React.StrictMode>
+);

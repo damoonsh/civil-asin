@@ -1,6 +1,7 @@
-// src/Header.jsx
-import '../styles/Header.css'; // Optional: for styling
+import '../styles/Header.css'; 
+import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
+
 const Header = () => {
   return (
     <header className="header">
@@ -10,7 +11,9 @@ const Header = () => {
       </div>
       <div className="left-content">
         {/* <h1>Civil Asin | سیویل آسین</h1> */}
-        <img src="/civil-asin/full_logo.png" alt="Company Logo" className="logo" />
+        <Link to="/">
+          <img src="/civil-asin/full_logo.png" alt="Company Logo" className="logo" />
+        </Link>
       </div>
     </header>
   );

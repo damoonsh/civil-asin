@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "homepage": "https://damoonsh.github.io/civil-asin/",
   "scripts": {
     "dev": "vite",
@@ -15,8 +14,10 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  }, 
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.2.0",
+    "react-router-hash-link": "^2.4.3"
+  },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@types/react": "^18.3.12",
