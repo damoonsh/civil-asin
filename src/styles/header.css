@@ -13,19 +13,26 @@
   display: flex;
   align-items: center;
   padding-right: 5px;
+  flex: 1;
 }
 
-.left-content h1 {
-  margin-right: 20px;
+.middle-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.right-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 5px;
+  flex: 1;
 }
 
 .logo {
   height: 50px;
-}
-
-.right-content {
-  text-align: right;
-  padding-left: 5px;
 }
 
 .header h1 {
@@ -33,8 +40,14 @@
   font-size: 2rem; /* Default font size */
 }
 
-.logo {
-  height: 50px;
+.header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.left-content a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Media query for smaller screens */
