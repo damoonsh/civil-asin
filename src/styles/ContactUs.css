@@ -13,6 +13,7 @@
 .contact-us-content {
   display: flex;
   gap: 2rem;
+  flex-direction: row;
 }
 
 .contact-us-column {
@@ -25,12 +26,14 @@
 .english {
   background-color: #f0f8ff;
   text-align: left;
+  order: 1;
 }
 
 .persian {
   background-color: #fff8f0;
   text-align: right;
   direction: rtl;
+  order: 0;
 }
 
 .contact-us-column h2 {
@@ -44,12 +47,12 @@
 }
 
 /* Responsive layout for smaller screens */
-@media (max-width: 540px) {
+@media (max-width: 720px) {
   .contact-us-content {
     flex-direction: column;
   }
-  
+
   .contact-us-column {
     margin-bottom: 1.5rem;
   }
-} 
+}

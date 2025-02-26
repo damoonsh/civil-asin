@@ -91,7 +91,7 @@ body, html {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .members-grid {
     justify-content: center;
     gap: 1.5rem;
@@ -103,7 +103,7 @@ body, html {
   }
 }
 
-@media (max-width: 250px) {
+@media (max-width: 300px) {
   .person-card {
     flex-direction: column;
   }

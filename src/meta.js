@@ -1,10 +1,6 @@
 const project_images = [
     { src: "/civil-asin/project_pics/saveh.jpg", desc: "استادیم ساوجبلاغ" },
     { src: "/civil-asin/project_pics/malard_stadium.JPG", desc: "استادیم ملارد" },
-    {
-      src: "/civil-asin/project_pics/talayie.jpg",
-      desc: "مجتمع مسكوني ۲۰۰ واحدي طلاييه",
-    },
     { src: "/civil-asin/project_pics/veravard.JPG", desc:"ايستگاه آتش نشاني وردآورد" },
     { src: "/civil-asin/project_pics/fire46.JPG", desc: "ايستگاه آتش نشاني ۴۶" },
     { src: "/civil-asin/project_pics/langerud.JPG", desc: "پروژهٔ ۸۹۶ واحدی مسکن مهر لنگرود" },
