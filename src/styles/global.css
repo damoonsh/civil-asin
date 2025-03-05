@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Traffic";
+  src: url("/fonts/Traffic.woff2") format("woff2"),
+    url("/fonts/Traffic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply Traffic font to Persian text */
+[lang="fa"],
+[lang="ar"],
+.persian-text {
+  font-family: "Traffic", sans-serif;
+  direction: rtl;
+  text-align: right;
+}

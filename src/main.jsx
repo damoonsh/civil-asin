@@ -7,6 +7,7 @@ import Header from './components/header';
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
 import Footer from './components/footer';
+import './styles/global.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -4,9 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(to right, #00008B 50%, orange 50%);
+  background: linear-gradient(to right, #00008b 50%, orange 50%);
   color: white;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .left-content {
@@ -35,14 +35,32 @@
   height: 50px;
 }
 
+.company-title {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .header h1 {
-  margin-right: 20px;
-  font-size: 2rem; /* Default font size */
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.registry-number {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-top: 2px;
+  text-align: center;
+  width: 100%;
 }
 
 .header h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .left-content a {
@@ -52,31 +70,49 @@
 
 /* Media query for smaller screens */
 @media (max-width: 1200px) {
-  .header h3 {
+  .header h1 {
     font-size: 1.8rem;
+  }
+  .registry-number {
+    font-size: 0.75rem;
+  }
+  .header h3 {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 1000px) {
-  .header h3 {
+  .header h1 {
     font-size: 1.6rem;
+  }
+  .registry-number {
+    font-size: 0.7rem;
+  }
+  .header h3 {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 800px) {
-  .header h3 {
-    font-size: 1.3rem;
-  }
   .header h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+  }
+  .registry-number {
+    font-size: 0.65rem;
+  }
+  .header h3 {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 600px) {
-  .header h3 {
-    font-size: 0.9rem;
-  }
   .header h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .registry-number {
+    font-size: 0.6rem;
+  }
+  .header h3 {
+    font-size: 0.8rem;
   }
 }
