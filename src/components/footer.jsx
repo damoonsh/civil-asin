@@ -52,7 +52,7 @@ const Footer = () => {
         <div style={footerStyle}>
             <div style={footerContentStyle}>
                 <div style={leftColumnStyle}>
-                    <p>Head Office Address: Tehran, Jahan Ara St., 35th St., No. 34, 3rd Floor</p>
+                    <p>Head Office Address: 3rd Floor, No. 34, Jahan Ara St., 35th St., Tehran, Iran</p>
                     <p>Tel: 021-88010844 / 021-88027022</p>
                     <p>Fax: 021-88003485</p>
                     <p>Postal Code: 1433634545</p>

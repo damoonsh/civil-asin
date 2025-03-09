@@ -13,14 +13,14 @@
   display: flex;
   align-items: center;
   padding-right: 5px;
-  flex: 1;
+  flex: 2; /* Adjust flex value */
 }
 
 .middle-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  flex: 1; /* Adjust flex value */
 }
 
 .right-content {
@@ -42,6 +42,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-left: 10px; /* Add margin to separate from NavBar */
 }
 
 .header h1 {
@@ -66,6 +67,11 @@
 .left-content a {
   text-decoration: none;
   color: white;
+}
+
+/* Add styles for the menu icon button */
+.menu-icon-button {
+  margin-right: 10px;
 }
 
 /* Media query for smaller screens */
