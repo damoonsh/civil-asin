@@ -5,19 +5,19 @@ const BoardMembers = () => {
   const boardMembers = [
     {
       id: 3,
-      image: "/civil-asin/personel/Javad.png",
+      image: "/personel/Javad.png",
       name: "جواد شاه‌حسینی",
       description: "مهندس عمران، مدیر عامل و عضو هیئت مدیره",
     },
     {
       id: 2,
-      image: "/civil-asin/personel/kaveh.jpeg",
+      image: "/personel/kaveh.jpeg",
       name: "کاوه میلادی راد",
       description: "دکترای مهندسی عمران، رئیس هیئت مدیره",
     },
     {
       id: 1,
-      image: "/civil-asin/personel/manafi.jpg",
+      image: "/personel/manafi.jpg",
       name: "کمال منافی",
       description: "مهندس مکانیک، نایب رئیس هیئت مدیره",
     },

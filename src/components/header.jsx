@@ -7,15 +7,12 @@ const Header = () => {
     <header className="header">
       <div className="left-content">
         <NavBar />
-        <Link to="/" className="company-title">
-          <h1>Civil Asin CO.</h1>
-        </Link>
       </div>
       <div className="right-content">
         <Link to="/" className="logo-link">
           <img
-            src="/civil-asin/logo_icon.png"
-            alt="Civil Asin Logo"
+            src="/civil_asin_logo.png"
+            alt="سیویل آسین — Civil Asin"
             className="logo"
           />
         </Link>
