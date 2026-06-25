@@ -1,96 +1,51 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: transparent;
-  color: white;
 }
 
-.navbar-content {
-  flex-grow: 1;
+.drawer-paper {
+  width: 100% !important;
+  max-width: 320px !important;
+  background: var(--color-surface) !important;
+  border-bottom: 3px solid var(--color-orange) !important;
+  box-shadow: var(--shadow-lg) !important;
 }
 
-.drawer {
-  width: auto;
-  max-width: 9%;
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.drawer-header h2 {
   margin: 0;
+  font-size: 1.1rem;
+  font-family: var(--font-persian);
+  font-weight: 600;
 }
 
-/* Responsive drawer width */
-@media (max-width: 1200px) {
-  .drawer {
-    max-width:12%;
-  }
+.drawer-close {
+  color: var(--color-white) !important;
 }
 
-@media (max-width: 800px) {
-  .drawer {
-    max-width: 15%;
-  }
+.drawer-link {
+  color: var(--color-navy) !important;
+  font-family: var(--font-persian) !important;
+  font-size: 1.05rem !important;
+  text-align: right !important;
+  direction: rtl !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
 }
 
-@media (max-width: 600px) {
-  .drawer {
-    max-width: 20%;
-  }
+.drawer-link:hover {
+  background-color: var(--color-persian-bg) !important;
+  color: var(--color-orange) !important;
 }
 
-.navbar a {
-  color: white;
-  /* Default text color */
-  text-decoration: none;
-  font-size: 1.3rem;
-  /* Default font size */
-  transition: color 0.3s ease;
-}
-
-.drawer .MuiListItem-root {
-  color: blue; /* Set text color to blue */
-  text-align: right; /* Align text to the right */
-  direction: rtl; /* Set text direction to right-to-left */
-}
-
-.drawer .MuiListItem-root:hover {
-  background-color: orange; /* Slightly darker yellow on hover */
-  color: #0000ff; /* Darker blue on hover */
-}
-
-.navbar a:hover {
-  color: #007bff;
-  /* Blue on hover */
-}
-
-/* Media queries for responsive font sizes and spacing */
-
-/* For screens smaller than 1200px */
-@media (max-width: 1800px) {
-  .navbar {
-    gap: 2rem;
-    /* Reduce spacing */
-  }
-}
-
-/* For screens smaller than 1000px */
-@media (max-width: 1000px) {
-  .navbar {
-    gap: 2rem;
-    /* Reduce spacing */
-  }
-}
-
-/* For screens smaller than 800px */
-@media (max-width: 800px) {
-  .navbar {
-    gap: 1.7rem;
-    /* Reduce spacing */
-  }
-}
-
-/* For screens smaller than 600px */
-@media (max-width: 600px) {
-  .navbar {
-    gap: 1.1rem;
-    /* Reduce spacing */
-  }
+.drawer-link .MuiListItemText-primary {
+  font-weight: 500;
 }

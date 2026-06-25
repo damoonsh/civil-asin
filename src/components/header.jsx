@@ -1,4 +1,4 @@
-import "../styles/Header.css";
+import "../styles/header.css";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 
@@ -9,14 +9,13 @@ const Header = () => {
         <NavBar />
         <Link to="/" className="company-title">
           <h1>Civil Asin CO.</h1>
-          <span className="registry-number">Registry #: 168128</span>
         </Link>
       </div>
       <div className="right-content">
-        <Link to="/">
+        <Link to="/" className="logo-link">
           <img
-            src="/civil-asin/full_logo.png"
-            alt="Company Logo"
+            src="/civil-asin/logo_icon.png"
+            alt="Civil Asin Logo"
             className="logo"
           />
         </Link>

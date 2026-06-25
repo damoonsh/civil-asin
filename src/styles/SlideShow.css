@@ -1,80 +1,162 @@
 .slideshow {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   overflow: hidden;
   width: 100%;
-  height: 350px;
+  min-height: 320px;
   position: relative;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  padding: 0 3rem;
+  direction: ltr;
 }
 
 .slideshow-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
-  padding-top: 0.2rem;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+  padding: 1rem 0.5rem;
 }
 
 .slideshow-image {
   width: 100%;
-  height: 80%; /* Adjust height as needed */
+  height: 240px;
   object-fit: cover;
-  transition: transform 1s ease-in-out;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.slideshow-image:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
 }
 
 .cert-image {
-  width: 70%;
-  /* height: 10%; */
+  width: auto;
+  max-width: 85%;
+  height: 200px;
+  object-fit: contain;
+  background: var(--color-bg);
+  padding: 0.5rem;
 }
 
 .slideshow-desc {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px;
-  border-radius: 5px;
+  bottom: 1.25rem;
+  right: 1rem;
+  left: 1rem;
+  color: var(--color-white);
+  background: linear-gradient(transparent, rgba(10, 36, 99, 0.85));
+  padding: 1.5rem 0.75rem 0.5rem;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  font-family: var(--font-persian);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: right;
+  direction: rtl;
+  pointer-events: none;
 }
 
 .nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: var(--color-navy);
+  color: var(--color-white);
   border: none;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  direction: ltr;
+  unicode-bidi: isolate;
 }
 
 .prev-button {
-  left: 10px;
+  left: 0.75rem;
 }
 
 .next-button {
-  right: 10px;
+  right: 0.75rem;
 }
 
 .nav-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--color-orange);
+  transform: translateY(-50%) scale(1.08);
 }
 
 .desc-below {
-  margin-top: 10px;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px;
-  border-radius: 5px;
-  font-size:0.7rem;
+  margin-top: 0.75rem;
+  color: var(--color-text);
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-family: var(--font-persian);
+  font-size: 0.85rem;
+  font-weight: 500;
+  direction: rtl;
 }
 
 .slideshow-cert {
-  /* Keep the existing height for when DescOn is true */
-  height: 300px; /* This is likely your current value */
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+  min-height: 280px;
+  background: var(--color-bg);
+  box-shadow: none;
+  border: 1px solid var(--color-border);
+}
+
+.slideshow-cert .slideshow-item {
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .slideshow {
+    min-height: 260px;
+    padding: 0 2.5rem;
+  }
+
+  .slideshow-image {
+    height: 180px;
+  }
+
+  .cert-image {
+    height: 150px;
+  }
+
+  .nav-button {
+    width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow {
+    padding: 0 2rem;
+    border-radius: var(--radius-md);
+  }
+
+  .slideshow-image {
+    height: 150px;
+  }
+
+  .cert-image {
+    height: 120px;
+  }
+
+  .slideshow-desc {
+    font-size: 0.75rem;
+  }
 }

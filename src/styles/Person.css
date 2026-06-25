@@ -1,46 +1,66 @@
 .person-card {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 16px;
-    background-color: white;
-  }
-  
-  .person-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: var(--color-surface);
+}
+
+.person-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.person-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-english-bg) 100%);
+}
+
+.person-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.person-info {
+  padding: 1.25rem;
+  text-align: right;
+  direction: rtl;
+}
+
+.person-name {
+  font-family: var(--font-persian);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: var(--color-navy);
+}
+
+.person-description {
+  font-family: var(--font-persian);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
   .person-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+    height: 260px;
   }
-  
-  .person-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .person-info {
-    padding: 16px;
-  }
-  
+
   .person-name {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-    color: #333;
+    font-size: 1.2rem;
   }
-  
-  .person-description {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
-    margin: 0;
-  }
+}

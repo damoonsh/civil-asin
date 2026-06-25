@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-import "../styles/Slideshow.css";
+import "../styles/SlideShow.css";
 import Modal from "./Modal";
 
 function sizing_logic(w, cert) {

@@ -1,13 +1,10 @@
-import React from "react";
 import "../styles/AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="about-us-container">
-      {/* <h1 className="about-us-title">About Us / درباره ما</h1> */}
-
+    <div className="about-us-container page-container">
       <div className="about-us-content">
-        <div className="about-us-column english">
+        <div className="about-us-column content-card english">
           <h2>Civil Asin Company</h2>
           <p>
             Civil Asin Engineering Company was established in 1379 with the aim
@@ -31,7 +28,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="about-us-column persian">
+        <div className="about-us-column content-card persian">
           <h2>شرکت سیویل آسین</h2>
           <p>
             شرکت سیویل آسین در سال ۱۳۷۹ با هدف ارائه خدمات پیمانکاری و ساخت در
